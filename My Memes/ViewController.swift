@@ -161,6 +161,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UITextF
     }
     
 
+    func save() {
+        var meme = Meme( topText: topText.text!,
+            bottomText: bottomText.text!,
+            originalImage: memeImage.image!,
+            memedImage: generateMemedImage())
+        
+    }
 
 
 }

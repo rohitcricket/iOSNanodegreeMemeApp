@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H8e-bo-fWn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -63,8 +64,7 @@
                                         <exclude reference="lLh-hn-5MR"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="50" y="72" width="301" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="lLh-hn-5MR"/>
                                     </mask>
@@ -84,8 +84,7 @@
                                         <exclude reference="ZGP-nB-NPO"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="50" y="518" width="301" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="SoU-3F-6f0"/>
                                         <include reference="ZGP-nB-NPO"/>
@@ -117,18 +116,18 @@
                                 <exclude reference="Yl7-iv-eTS"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="96o-uT-uU9"/>
-                                <exclude reference="ENT-GP-k9g"/>
-                                <exclude reference="okR-Kb-hub"/>
+                                <exclude reference="cZQ-bE-9FQ"/>
                                 <exclude reference="943-qQ-pkj"/>
                                 <exclude reference="InL-YT-dLg"/>
                                 <exclude reference="dlf-Ih-nFx"/>
                                 <exclude reference="1xw-U7-jKI"/>
                                 <exclude reference="Q46-xK-cDv"/>
+                                <exclude reference="96o-uT-uU9"/>
+                                <exclude reference="ENT-GP-k9g"/>
+                                <exclude reference="okR-Kb-hub"/>
                                 <exclude reference="80V-4q-t8h"/>
                                 <exclude reference="f5f-2T-N1K"/>
                                 <exclude reference="rQV-su-0tk"/>
-                                <exclude reference="cZQ-bE-9FQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -140,21 +139,22 @@
                                 <include reference="Yl7-iv-eTS"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="96o-uT-uU9"/>
-                                <include reference="ENT-GP-k9g"/>
-                                <include reference="okR-Kb-hub"/>
+                                <include reference="cZQ-bE-9FQ"/>
                                 <include reference="943-qQ-pkj"/>
                                 <include reference="InL-YT-dLg"/>
                                 <include reference="dlf-Ih-nFx"/>
                                 <include reference="1xw-U7-jKI"/>
                                 <include reference="Q46-xK-cDv"/>
+                                <include reference="96o-uT-uU9"/>
+                                <include reference="ENT-GP-k9g"/>
+                                <include reference="okR-Kb-hub"/>
                                 <include reference="80V-4q-t8h"/>
                                 <include reference="f5f-2T-N1K"/>
                                 <include reference="rQV-su-0tk"/>
-                                <include reference="cZQ-bE-9FQ"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="j6D-WB-qhE"/>
                     <connections>
                         <outlet property="bottomText" destination="Yl7-iv-eTS" id="Cgs-hh-pZG"/>
                         <outlet property="memeImage" destination="ws2-P2-fgi" id="HsW-4D-XGI"/>
@@ -163,7 +163,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379.5" y="305"/>
+            <point key="canvasLocation" x="183" y="217"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Yb-1z-EF3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H8e-bo-fWn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VYq-Gj-0Yj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Dx9-Ii-XmB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cL-qW-De1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="217"/>
         </scene>
     </scenes>
 </document>
